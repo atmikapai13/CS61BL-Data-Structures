@@ -1,0 +1,17 @@
+# A simple test of adding, committing, modifying, and checking out.
+> init
+<<<
++ wug.txt wug.txt
+> add wug.txt
+<<<
+> commit "added wug"
+<<<
++ wug.txt notwug.txt
+# Must change
+> checkout -- wug.txt
+<<<
+= wug.txt wug.txt
+<<<<<<< HEAD
+
+=======
+>>>>>>> 13eef6096e842d8d55a0eb148f915e7d4f861c65
